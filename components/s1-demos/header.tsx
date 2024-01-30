@@ -17,7 +17,7 @@ export default function Header() {
       <div className="flex flex-col relative text-center justify-center z-40">
         <div className="text-6xl font-bold opacity-80">s1:demos</div>
         <div className="text-xl sm:text-3xl opacity-70 italic mt-2">
-          21+ builders entered the arena... to chase their dreams and build
+          20+ builders entered the arena... to chase their dreams and build
           something to showcase to you.
         </div>
       </div>
