@@ -32,7 +32,7 @@ const DemoCard: React.FC<DemoCardProps> = ({
   return (
     <Card className="p-4 rounded-lg bg-white bg-opacity-50">
       <CardHeader>
-        <CardTitle className="text-lg font-semibold">{title}</CardTitle>
+        <CardTitle className="text-lg font-bold">{title}</CardTitle>
         {subtitle && (
           <CardDescription className="text-gray-600 ">
             {subtitle}

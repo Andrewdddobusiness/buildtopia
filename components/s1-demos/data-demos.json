@@ -18,6 +18,14 @@
     "videoSrc": "https://res.cloudinary.com/dmshqcspe/video/upload/v1706585592/neumu0ri8y03jprhdqvm.mp4"
   },
   {
+    "title": "spybug",
+    "subtitle": "@jon_bzt",
+    "description": "A minimalistic bug report service.",
+    "socialURL": "https://threads.net/jon_bzt",
+    "imageSrc": "/jon_bzt.png",
+    "videoSrc": "https://res.cloudinary.com/dmshqcspe/video/upload/v1706622669/dwrkemxnnfhxgpx25u7u.mp4"
+  },
+  {
     "title": "buildtopia",
     "subtitle": "@andrewdddo",
     "description": "An experience where builders and creatives can work on their ideas and side projects.",
