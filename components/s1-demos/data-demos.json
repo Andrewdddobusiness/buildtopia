@@ -1,0 +1,29 @@
+[
+  {
+    "title": "webex streamdeck",
+    "subtitle": "@crshnburn",
+    "description": "Small hardware streamdeck to manage WebEx meetings.",
+
+    "socialURL": "https://threads.net/crshnburn",
+    "imageSrc": "/crshnburn.png",
+    "videoSrc": "https://res.cloudinary.com/dmshqcspe/video/upload/v1706494758/qetbobixdcs0amzrxlhy.mp4"
+  },
+  {
+    "title": "drop a note",
+    "subtitle": "@d.w.820",
+    "description": "Anyone can leave a note and view others notes.",
+
+    "socialURL": "https://threads.net/d.w.820",
+    "imageSrc": "/d_w_820.png",
+    "videoSrc": "https://res.cloudinary.com/dmshqcspe/video/upload/v1706585592/neumu0ri8y03jprhdqvm.mp4"
+  },
+  {
+    "title": "buildtopia",
+    "subtitle": "@andrewdddo",
+    "description": "An experience where builders and creatives can work on their ideas and side projects.",
+
+    "socialURL": "https://threads.net/andrewdddo",
+    "imageSrc": "/andrewdddo.png",
+    "videoSrc": "https://res.cloudinary.com/dmshqcspe/video/upload/v1706585592/neumu0ri8y03jprhdqvm.mp4"
+  }
+]
