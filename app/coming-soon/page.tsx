@@ -20,10 +20,10 @@ export default function ComingSoonPage() {
               <div className="text-2xl sm:text-4xl italic mt-2">
                 s2... see you there?
               </div>
-              {/* <div className="text-md sm:text-xl  italic mt-2">
+              <div className="text-md sm:text-xl  italic mt-2">
                 sub to stay updated.
-              </div> */}
-              {/* <EmailSubscribeSection /> */}
+              </div>
+              <EmailSubscribeSection />
             </div>
             <div className="flex justify-center items-center">
               <Image

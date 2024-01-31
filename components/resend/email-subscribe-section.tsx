@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ReloadIcon } from "@radix-ui/react-icons";
 import { useToast } from "@/components/ui/use-toast";
+import addContactToList from "@/actions/sendgrid/addContactToList";
+import singleSend from "@/actions/sendgrid/createSingleSend";
 
 interface EmailSubscribeSectionProps {}
 
@@ -20,29 +22,35 @@ const EmailSubscribeSection: React.FC<EmailSubscribeSectionProps> = ({}) => {
     setIsValidEmail(validateEmail(inputEmail));
   };
 
-  const handleSubscribeClick = async () => {
+  async function handleSubscribeClick(email: string) {
     if (isValidEmail) {
       setIsLoading(true);
       try {
-        // Simulate asynchronous action (e.g., fetching data from server)
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-        // Perform server action call here
-        // Example: fetch(`/api/sendEmail?email=${email}`)
-        alert(`Subscribing with email: ${email}`);
-        setIsLoading(false); // Move this line here to ensure it's set even in case of an error
+        await addContactToList(email);
+
+        // await singleSend(email);
+
         toast({
-          title: "you are subbed.",
-          description: "check your email for a welcome!",
+          title: "you're in!",
+          description: "check your email for a welcome.",
         });
       } catch (error) {
         console.error("Error:", error);
-        alert("An error occurred while subscribing.");
-        setIsLoading(false); // Set loading state to false in case of error
+        toast({
+          title: "Something went wrong.",
+          description: "Please try again later.",
+        });
+      } finally {
+        setIsLoading(false);
       }
     } else {
-      alert("Please enter a valid email address.");
+      console.error("Please enter a valid email address.");
+      toast({
+        title: "Invalid Email Address",
+        description: "Please enter a valid email address.",
+      });
     }
-  };
+  }
 
   const validateEmail = (email: string) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -62,7 +70,7 @@ const EmailSubscribeSection: React.FC<EmailSubscribeSectionProps> = ({}) => {
         </div>
         <Button
           className="w-1/2"
-          onClick={handleSubscribeClick}
+          onClick={() => handleSubscribeClick(email)}
           disabled={!isValidEmail || isLoading}
         >
           {isLoading ? (
