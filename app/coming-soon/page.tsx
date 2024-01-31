@@ -1,3 +1,4 @@
+"use client";
 import HomeBackground from "@/components/backgrounds/home-background";
 import Navigation from "@/components/nav";
 import Footer from "@/components/footer";
@@ -29,8 +30,8 @@ export default function ComingSoonPage() {
               <Image
                 src="/utopia-city-1.png"
                 alt="utopia"
-                width={350} // Set the desired width
-                height={350} // Set the desired height
+                width={350}
+                height={350}
                 sizes="100vw"
                 style={{ objectFit: "cover", width: "100%", height: "auto" }}
               />

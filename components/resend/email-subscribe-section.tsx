@@ -32,7 +32,7 @@ const EmailSubscribeSection: React.FC<EmailSubscribeSectionProps> = ({}) => {
 
         toast({
           title: "you're in!",
-          description: "check your email for a welcome.",
+          description: "welcome builder.",
         });
       } catch (error) {
         console.error("Error:", error);
